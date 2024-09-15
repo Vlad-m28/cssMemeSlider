@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+
+    padding: 3% 15% 0 15%;
+
+}
+
+.slider input[name="change"] {
+    display: none;
+}
+
+.slider__top {
+    border-radius: 2rem;
+    box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.8);
+
+    overflow: hidden;
+}
+
+.slider__top-wrapper {
+    display: flex;
+    width: 100%;
+
+    transition: all 1s;
+}
+
+.slider__top-wrapper img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slider__btm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .6rem;
+}
+
+.slider__btm-text {
+    color: white;
+    overflow: hidden;
+    
+    transition: all .4s;
+}
+
+.text {
+    opacity: 0;
+}
+
+.slider__btm-nav {
+    display: flex;
+    gap: 1rem;
+    margin-right: .8rem;
+}
+
+.slider__btm-nav label {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 0.1rem 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    border: .2rem solid #acc7de;
+    background-color: #acc7de;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.slider__btm-nav label:hover {
+    background-color: white;
+    border: .2rem solid white;
+}
+
+.dot {
+    padding: 1rem;
+}
