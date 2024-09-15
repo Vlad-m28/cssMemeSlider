@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+    <title>Meme Slider</title>
 </head>
 <body>
-    
+    <main class="slider">
+        <input type="radio" name="change" id="button1" checked>
+        <input type="radio" name="change" id="button2">
+        <input type="radio" name="change" id="button3">
+        <input type="radio" name="change" id="button4">
+        <div class="slider__top">
+            <div class="slider__top-wrapper">
+                <img src="./assets/images/Slide-1.jpg" alt="Slide-1">
+                <img src="./assets/images/Slide-2.jpg" alt="Slide-2">
+                <img src="./assets/images/Slide-3.jpg" alt="Slide-3">
+                <img src="./assets/images/Slide-4.jpg" alt="Slide-4">
+            </div>
+        </div>
+        <div class="slider__btm">
+            <div class="slider__btm-text">
+                <p class="text item-1">Pedro Pedro Pedro Pedro Pe</p>
+                <p class="text item-2">Facts of life</p>
+                <p class="text item-3">Когда освоил Front-end</p>
+                <p class="text item-4">Хорошего дня!</p>
+            </div>
+            <nav class="slider__btm-nav">
+                <label for="button1">
+                    <div class="dot"></div>
+                </label>
+                <label for="button2">
+                    <div class="dot"></div>
+                </label>
+                <label for="button3">
+                    <div class="dot"></div>
+                </label>
+                <label for="button4">
+                    <div class="dot"></div>
+                </label>
+            </nav>
+        </div>
+    </main>
 </body>
-</html>
