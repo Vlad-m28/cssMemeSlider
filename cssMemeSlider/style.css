@@ -118,3 +118,49 @@ body {
 #button4:checked~.slider__btm .slider__btm-nav label[for="button4"] {
     background-color: transparent;
 }
+
+/* Text Animation */
+
+.slider__btm .slider__btm-text .item-1 {
+    transform: translateY(-15rem);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.slider__btm .slider__btm-text .item-2 {
+    transform: translateY(-15rem);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.slider__btm .slider__btm-text .item-3 {
+    transform: translateY(-15rem);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.slider__btm .slider__btm-text .item-4 {
+    transform: translateY(-15rem);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#button1:checked~.slider__btm .slider__btm-text .item-1 {
+    transform: translateY(2.6875rem);
+    opacity: 1;
+}
+
+#button2:checked~.slider__btm .slider__btm-text .item-2 {
+    transform: translateY(0.875rem);
+    opacity: 1;
+}
+
+#button3:checked~.slider__btm .slider__btm-text .item-3 {
+    transform: translateY(-0.9375rem);
+    opacity: 1;
+}
+
+#button4:checked~.slider__btm .slider__btm-text .item-4 {
+    transform: translateY(-2.75rem);
+    opacity: 1;
+}
