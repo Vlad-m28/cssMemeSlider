@@ -84,3 +84,37 @@ body {
 .dot {
     padding: 1rem;
 }
+
+/* Slider Animation */
+
+#button1:checked~.slider__top .slider__top-wrapper {
+    transform: translate(0);
+}
+
+#button2:checked~.slider__top .slider__top-wrapper {
+    transform: translateX(-100%);
+}
+
+#button3:checked~.slider__top .slider__top-wrapper {
+    transform: translateX(-200%);
+}
+
+#button4:checked~.slider__top .slider__top-wrapper {
+    transform: translateX(-300%);
+}
+
+#button1:checked~.slider__btm .slider__btm-nav label[for="button1"] {
+    background-color: transparent;
+}
+
+#button2:checked~.slider__btm .slider__btm-nav label[for="button2"] {
+    background-color: transparent;
+}
+
+#button3:checked~.slider__btm .slider__btm-nav label[for="button3"] {
+    background-color: transparent;
+}
+
+#button4:checked~.slider__btm .slider__btm-nav label[for="button4"] {
+    background-color: transparent;
+}
